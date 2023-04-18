@@ -1,0 +1,15 @@
+{
+  "files": {
+    "main.css": "/internship-app/static/css/main.fced2770.css",
+    "main.js": "/internship-app/static/js/main.32a6d9a9.js",
+    "static/media/RobotoCondensed-Regular.ttf": "/internship-app/static/media/RobotoCondensed-Regular.fc3d2f2e3a203d0037c1.ttf",
+    "static/media/Dosis-VariableFont_wght.ttf": "/internship-app/static/media/Dosis-VariableFont_wght.1af19a28a29fcb2321da.ttf",
+    "index.html": "/internship-app/index.html",
+    "main.fced2770.css.map": "/internship-app/static/css/main.fced2770.css.map",
+    "main.32a6d9a9.js.map": "/internship-app/static/js/main.32a6d9a9.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.fced2770.css",
+    "static/js/main.32a6d9a9.js"
+  ]
+}
