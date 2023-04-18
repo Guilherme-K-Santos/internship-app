@@ -1,0 +1,138 @@
+// imports
+
+@import url('../styles/App.scss');
+@import url('../styles/Menu.scss');
+@import url('../styles/Introducao.scss');
+@import url('../styles/Conteudo.scss');
+@import url('../styles/SliderItem.scss');
+@import url('../styles/Encerramento.scss');
+
+// media queries abaixo (versão mobile)
+
+// alterações gerais
+@media (max-width: 1000px) {
+    .introduction {
+        .first-paragraph{
+            width: 90vw;
+        }
+
+        .second-paragraph {
+            flex-direction: column;
+            width: 90vw;
+
+            p {
+                width: 90vw;
+                margin-bottom: 30px;
+            }
+
+            .first-p-second-paragraph {
+                border: none;
+                padding-right: none;
+            }
+        }
+    }
+
+    .content {
+        .main-p-format {
+            width: 90vw;
+        }
+        
+        .destaque {
+            width: 85vw;
+        }
+
+        .slider {
+            max-width: 90vw;
+        }
+
+        .topicos {
+            width: 100vw;
+        }
+    }
+
+    .encerramento {
+        p {
+            width: 95vw;
+        }
+    }
+}
+
+@media (max-width: 749px) {
+    .content {
+        .topicos {
+            flex-direction: column;
+            align-items: center;
+            li {
+                margin-top: 20px;
+
+                p {
+                    font-size: large;
+                }
+            }
+        }
+    }
+}
+
+// alterações especificas de tamanho
+
+// tablets
+@media (min-width: 750px) and (max-width: 1000px) {
+    .header {
+        ul {
+            margin-left: 20px;
+
+            li {
+                font-size: small;
+            }
+        }
+    }
+}
+
+// Iphone XR e maioria dos celulares
+@media (min-width: 400px) and (max-width: 749px) {
+    .header {
+
+        ul {
+            width: 100%;
+        }
+        .logo {
+            display: none;
+        }
+    }
+}
+
+// largura do pixel 5 e abaixo dele
+@media (max-width: 399px) {
+    .App {
+        .title {
+            font-size: 2.5em;
+        }
+    }
+
+    .header {
+        ul {
+            width: 100%;
+            li {
+                width: 4.8em;
+                font-size: 12px;
+            }
+        }
+        .logo {
+            display: none;
+        }
+    }
+}
+
+// largura do galaxy fold e abaixo dele (não há)
+@media (max-width: 281px) {
+    .content {
+        .topicos {
+            li {
+                p {
+                    width: 250px;
+                    font-size: large;
+                }
+            }
+        }
+    }
+}

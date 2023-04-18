@@ -1,0 +1,43 @@
+// font config
+@font-face {
+    font-family: 'Dosis';
+    src: url('../../public/fonts/Dosis/Dosis-VariableFont_wght.ttf') format('truetype');
+}
+
+@font-face {
+    font-family: 'Roboto';
+    src: url('../../public/fonts/Roboto/RobotoCondensed-Regular.ttf') format('truetype');
+}
+
+/* mixins (basicamente é uma função que salva as caracteristicas para usar depois e tirar 
+a repetição chata do css.) */
+@mixin margin-padding-default{
+    margin: 0;
+    padding: 0;
+}
+
+// basic page config
+html, body {
+    width: 100%;
+    height: 100%;
+
+    // colocando as caracteristicas do mixin em html e body
+    @include margin-padding-default;
+}
+
+ul, ol {
+    // colocando as caracteristicas do mixin em ul e ol.
+    @include margin-padding-default;
+
+    list-style: none;
+}
+
+// setting fonts
+h1, span {
+    font-family: 'Dosis', sans-serif;
+}
+
+p, div, li {
+    font-family: 'Roboto';
+    @include margin-padding-default;
+}

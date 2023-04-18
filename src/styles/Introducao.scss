@@ -1,0 +1,36 @@
+// mixins
+@mixin paragraph-default {
+    font-size: 1.5em;
+    letter-spacing: normal;
+    color: rgb(55, 55, 55);
+    margin-bottom: 30px;
+}
+
+// variables
+$main-display: flex;
+.introduction {
+    background-color: rgb(255, 255, 255);
+    display: $main-display;
+    flex-direction: column;
+    align-items: center;
+    
+    .first-paragraph {
+        width: 50vw;
+        @include paragraph-default;
+    }
+
+    .second-paragraph {
+        display: $main-display;
+        justify-content: space-between;
+        width: 70vw;
+        @include paragraph-default;
+        p { 
+            width: 30vw;
+        }
+    }
+
+    .first-p-second-paragraph {
+        border-right: 1px solid gray;
+        padding-right: 2.5em;
+    }
+}
